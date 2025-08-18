@@ -1,7 +1,6 @@
 import ProductDetail from "../../components/ProductDetail";
 
-const defaultEndpoint =
-	"https://fakestoreapi.com/products/category/electronics";
+const defaultEndpoint = "https://fakestoreapi.com/products";
 
 export const getStaticPaths = async () => {
 	const res = await fetch(defaultEndpoint);

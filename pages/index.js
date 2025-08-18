@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 
 export default function Home() {
 	return (
-		<div className="relative min-h-screen">
+		<div className="relative flex flex-col justify-center min-h-screen align-center">
 			{/* background color grid */}
 			<div className="absolute inset-0 origin-top-left transform -skew-y-12">
 				<div className="grid grid-cols-6 grid-rows-4 bg-violet-100 min-h-45vw bg-gradient-to-br from-cyan-400 via-violet-400 to-cyan-400 animate-gradient-to-br">

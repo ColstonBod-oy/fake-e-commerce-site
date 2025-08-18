@@ -5,7 +5,7 @@ export default function ProductCard({ id, title, image }) {
 	return (
 		<Link
 			href={`/products/${id}`}
-			className="z-10 w-full max-w-sm pt-4 mx-auto overflow-hidden bg-white rounded-md shadow-md"
+			className="z-10 w-full max-w-sm pt-4 mx-auto overflow-hidden bg-white rounded-md shadow-lg"
 		>
 			<div className="relative flex justify-end w-full h-56">
 				<Image src={image} layout="fill" objectFit="contain" alt={title} />

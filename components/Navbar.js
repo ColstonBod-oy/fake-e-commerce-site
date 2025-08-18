@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import logo from "../public/logo.svg";
 
 const menuFadeIn = () => {
@@ -22,20 +21,8 @@ const menuFadeOut = () => {
 };
 
 export default function Navbar() {
-	const router = useRouter();
-	const { slug } = router.query;
-
 	return (
-		<nav
-			className={
-				"fixed inset-x-0 z-20 " +
-				(router.asPath === "/products"
-					? "bg-emerald-300 lg:bg-opacity-0"
-					: router.asPath === `/products/${slug}`
-					? "bg-violet-400"
-					: "")
-			}
-		>
+		<nav className={"fixed inset-x-0 z-20 bg-violet-400"}>
 			<div className="relative max-w-xs mx-auto lg:pr-2 md:max-w-6xl">
 				<div className="flex justify-between font-medium md:justify-center lg:justify-end">
 					<Link href="/" className="flex items-center py-5 md:px-2">

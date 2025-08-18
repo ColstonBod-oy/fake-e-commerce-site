@@ -3,7 +3,7 @@ import logoipsum from "../public/logoipsum.svg";
 
 export default function Hero() {
 	return (
-		<div className="flex flex-col justify-center min-h-screen py-6 bg-gray-100 sm:py-12">
+		<div className="flex flex-col bg-gray-100">
 			<div className="relative py-3 sm:max-w-xl sm:mx-auto">
 				<div className="absolute inset-0 transform -skew-y-6 shadow-lg bg-gradient-to-r from-cyan-400 to-violet-500 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
 				<div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
